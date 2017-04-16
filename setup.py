@@ -8,7 +8,7 @@ setup(
     author='Bradley Cicenas',
     author_email='bradley@vektor.nyc',
     url='https://github.com/bcicen/slack-progress',
-    install_requires=['slacker>=0.9.25'],
+    install_requires=['slacker>=0.9.25', 'six>=1.10.0'],
     license='http://opensource.org/licenses/MIT',
 #    classifiers=(
 #        'Intended Audience :: Developers',

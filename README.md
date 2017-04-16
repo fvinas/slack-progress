@@ -3,13 +3,18 @@
 [![PyPI version](https://badge.fury.io/py/slack-progress.svg)](https://badge.fury.io/py/slack-progress)
 
 A realtime progress bar for Slack
+Forked from https://github.com/bcicen/slack-progress and slightly adapted to work with Python 2.
 
 ![screencap][screencap]
 
 ## Installing
 
 ```bash
-pip install slack-progress
+# Clone the repository
+git clone https://github.com/fvinas/slack-progress
+cd slack-progress
+# Then install it in edit mode using pip
+pip install -e .
 ```
 
 ## Usage

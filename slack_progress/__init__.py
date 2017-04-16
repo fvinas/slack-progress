@@ -1,4 +1,5 @@
 from slacker import Slacker
+import six
 
 class SlackProgress(object):
     def __init__(self, token, channel, suffix='%'):
@@ -32,8 +33,8 @@ class SlackProgress(object):
         self.slack.chat.update(chan, msg_ts, self._makebar(pos))
 
     def _makebar(self, pos):
-        bar = (round(pos / 5) * chr(9608))
-        return '{} {}{}'.format(bar, pos, self.suffix)
+        bar = (int(round(pos / 5)) * six.unichr(9608))
+        return '{} {}{}'.format(bar.encode('utf-8'), pos, self.suffix)
 
 class ProgressBar(object):
 
